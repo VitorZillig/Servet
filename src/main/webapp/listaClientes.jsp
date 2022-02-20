@@ -12,16 +12,16 @@
     <title>Title</title>
 </head>
 <body>
-    <ul>
-        <%
-            List<ClienteModel> clientes = (List)request.getAttribute("clientes");
-            for(ClienteModel clienteModel: clientes){
-        %>
-                <li><%= clienteModel.getNome()%></li>
+<%--    <ul>--%>
+<%--        <%--%>
+<%--            List<ClienteModel> clientes = (List)request.getAttribute("clientes");--%>
+<%--            for(ClienteModel clienteModel: clientes){--%>
+<%--        %>--%>
+<%--                <li><%= clienteModel.getNome()%></li>--%>
 
-      <%
-          }
-      %>
-    </ul>
+<%--      <%--%>
+<%--          }--%>
+<%--      %>--%>
+<%--    </ul>--%>
 </body>
 </html>

@@ -23,8 +23,8 @@ public class Cliente extends HttpServlet {
 
         listaClientes.adiciona(cliente);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("clienteCadastrado.jsp");
         request.setAttribute("cliente", cliente.getNome());
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("clienteCadastrado.jsp");
         requestDispatcher.forward(request, response);
 
     }
