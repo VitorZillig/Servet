@@ -1,5 +1,6 @@
 package com.aula04.banco.banco.dto;
 
+import com.aula04.banco.banco.utils.CNPJ;
 import com.aula04.banco.banco.utils.CPF;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,8 @@ public class RequestCliente {
     private String email;
     @CPF()
     private String cpf;
+    @CNPJ()
+    private String cnpj;
     private String senha;
     private Integer agencia;
 }
